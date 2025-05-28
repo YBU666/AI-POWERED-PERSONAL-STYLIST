@@ -89,20 +89,20 @@ The application follows Django's MVT (Model-View-Template) architecture with:
 - Enhanced virtual try-on capabilities
 
 ##Screenshots
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a1.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a2.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a3.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a4.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a5.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a6.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a7.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a8.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a9.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a10.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a11.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a12.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a13.png?raw=true)
-![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST.git/blob/main/a14.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a1.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a2.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a3.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a4.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a5.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a6.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a7.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a8.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a9.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a10.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a11.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a12.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a13.png?raw=true)
+![images](https://github.com/YBU666/AI-POWERED-PERSONAL-STYLIST/blob/main/images/a14.png?raw=true)
 
 
 
