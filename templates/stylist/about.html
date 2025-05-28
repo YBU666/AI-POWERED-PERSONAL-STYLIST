@@ -1,0 +1,256 @@
+{% extends 'stylist/base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="about-hero-section text-center py-5 position-relative" style="background: linear-gradient(135deg, #6366f1 0%, #60a5fa 100%), url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'); color: #fff; border-radius: 2rem; margin-bottom: 2rem; overflow: hidden;">
+    <div class="container position-relative z-2">
+        <h1 class="display-3 fw-bold mb-3" style="font-family: 'Montserrat',sans-serif; letter-spacing: 1px; text-shadow: 0 4px 24px rgba(60,60,120,0.18);">About AI Stylist</h1>
+        <p class="lead mb-4 fs-4" style="max-width: 700px; margin: 0 auto;">Your AI-powered fashion companion for personalized, effortless style. Discover how we blend technology and creativity to make you look and feel your best.</p>
+        <div class="scroll-indicator mt-5">
+            <span></span>
+        </div>
+    </div>
+    <div class="position-absolute bottom-0 start-0 w-100" style="line-height:0;">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#f8fafc" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,37.3C672,32,768,32,864,37.3C960,43,1056,53,1152,53.3C1248,53,1344,43,1392,37.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <!-- Mission Card -->
+    <div class="glass-card card mb-5 animate__animated animate__fadeInUp">
+        <div class="card-body py-5 px-4 d-flex flex-column flex-md-row align-items-center gap-4">
+            <div class="mission-icon-box d-flex align-items-center justify-content-center mb-4 mb-md-0 animate__animated animate__pulse animate__infinite">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="flex-grow-1">
+                <h2 class="fw-bold mb-3 gradient-text">Our Mission</h2>
+                <div class="mission-highlight p-4">
+                    <p class="fs-4 mb-2 mission-main-text">
+                        <span class="gradient-text-2">AI Stylist</span> is a <span class="mission-keyword">personal styling assistant</span> that combines <span class="mission-keyword">artificial intelligence</span> with <span class="mission-keyword">fashion expertise</span> to provide <span class="mission-keyword">personalized outfit recommendations</span> tailored to your unique body type, preferences, and occasions.
+                    </p>
+                    <p class="mb-0 text-secondary">
+                        Our mission is to make fashion <span class="mission-keyword">accessible</span> and <span class="mission-keyword">enjoyable</span> for everyone, eliminating the stress of deciding what to wear while helping you look and feel your best.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How It Works Timeline -->
+    <div class="glass-card card mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="card-body py-5 px-4">
+            <h2 class="fw-bold mb-4 gradient-text">How It Works</h2>
+            <div class="timeline d-flex flex-column flex-md-row justify-content-between align-items-center position-relative">
+                <div class="timeline-step text-center flex-fill mb-4 mb-md-0">
+                    <div class="timeline-icon mb-3 mx-auto"><i class="fas fa-user-circle"></i></div>
+                    <h5 class="fw-bold mb-1">Create Profile</h5>
+                    <p class="small mb-0">Enter your body measurements, skin tone, and preferences</p>
+                </div>
+                <div class="timeline-line d-none d-md-block"></div>
+                <div class="timeline-step text-center flex-fill mb-4 mb-md-0">
+                    <div class="timeline-icon mb-3 mx-auto"><i class="fas fa-tshirt"></i></div>
+                    <h5 class="fw-bold mb-1">Get Recommendations</h5>
+                    <p class="small mb-0">Our AI generates personalized outfit suggestions</p>
+                </div>
+                <div class="timeline-line d-none d-md-block"></div>
+                <div class="timeline-step text-center flex-fill">
+                    <div class="timeline-icon mb-3 mx-auto"><i class="fas fa-shopping-bag"></i></div>
+                    <h5 class="fw-bold mb-1">Shop Your Look</h5>
+                    <p class="small mb-0">Find where to purchase recommended items</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Technology Card -->
+    <div class="glass-card card mb-5 animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="card-body py-5 px-4">
+            <h2 class="fw-bold mb-3 gradient-text">Our Technology</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="tech-icon mb-3"><i class="fas fa-magic"></i></div>
+                    <h6 class="fw-bold">Personalized Recommendations</h6>
+                    <p class="small">Advanced algorithms analyze your profile to suggest outfits that complement your features.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="tech-icon mb-3"><i class="fas fa-image"></i></div>
+                    <h6 class="fw-bold">Visual Outfit Generation</h6>
+                    <p class="small">See realistic visualizations of recommended outfits.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="tech-icon mb-3"><i class="fas fa-shopping-cart"></i></div>
+                    <h6 class="fw-bold">Shopping Integration</h6>
+                    <p class="small">Find similar items from popular retailers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+.about-hero-section {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.scroll-indicator span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 2px 12px rgba(99,102,241,0.07);
+    position: relative;
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(12px); }
+}
+.glass-card {
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+    background: rgba(255,255,255,0.85);
+    border: none;
+    backdrop-filter: blur(8px);
+}
+.gradient-text {
+    background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.timeline {
+    width: 100%;
+    position: relative;
+    min-height: 120px;
+}
+.timeline-step {
+    min-width: 180px;
+    max-width: 220px;
+}
+.timeline-icon {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    color: #6366f1;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.07);
+    margin-bottom: 0.5rem;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+.timeline-icon:hover {
+    background: #6366f1;
+    color: #fff;
+    transform: scale(1.1) rotate(-6deg);
+}
+.timeline-line {
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+    flex: 1 1 0%;
+    margin: 0 10px;
+    border-radius: 2px;
+}
+.tech-icon {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    color: #60a5fa;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 0.5rem auto;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.07);
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+.tech-icon:hover {
+    background: #60a5fa;
+    color: #fff;
+    transform: scale(1.1) rotate(-6deg);
+}
+@media (max-width: 767px) {
+    .about-hero-section {
+        border-radius: 1.2rem;
+        padding: 2rem 0.5rem;
+    }
+    .glass-card {
+        border-radius: 1.2rem;
+    }
+    .timeline {
+        flex-direction: column !important;
+        min-height: unset;
+    }
+    .timeline-line {
+        display: none !important;
+    }
+    .timeline-step {
+        min-width: unset;
+        max-width: unset;
+        margin-bottom: 2rem;
+    }
+}
+.mission-icon-box {
+    min-width: 80px;
+    min-height: 80px;
+    background: linear-gradient(135deg, #6366f1 0%, #60a5fa 100%);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    box-shadow: 0 4px 24px rgba(99,102,241,0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    animation-duration: 2s;
+}
+.mission-highlight {
+    border-left: 6px solid #6366f1;
+    background: linear-gradient(90deg, #f8fafc 80%, #e0e7ff 100%);
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.04);
+}
+.mission-main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.4;
+}
+.mission-keyword {
+    color: #6366f1;
+    font-weight: 600;
+    background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.gradient-text-2 {
+    background: linear-gradient(90deg, #fbbf24 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+@media (max-width: 767px) {
+    .mission-icon-box {
+        min-width: 54px;
+        min-height: 54px;
+        font-size: 1.5rem;
+    }
+    .mission-highlight {
+        border-left-width: 4px;
+        padding: 1rem;
+    }
+}
+</style>
+{% endblock %}

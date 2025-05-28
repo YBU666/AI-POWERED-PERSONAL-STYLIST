@@ -1,0 +1,60 @@
+{% extends 'stylist/base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4">Your Profile</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="{{ form.profile_image.id_for_label }}" class="form-label">Profile Image</label>
+                            {% if user.profile.profile_image %}
+                                <div class="mb-2">
+                                    <img src="{{ user.profile.profile_image.url }}" alt="Profile Image" class="img-thumbnail" style="max-width: 200px;">
+                                </div>
+                            {% endif %}
+                            <input type="file" name="{{ form.profile_image.name }}" id="{{ form.profile_image.id_for_label }}" class="form-control">
+                            <div class="form-text">Upload a full-body image for better outfit recommendations</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="{{ form.skin_tone.id_for_label }}" class="form-label">Skin Tone</label>
+                            <select name="{{ form.skin_tone.name }}" id="{{ form.skin_tone.id_for_label }}" class="form-select">
+                                <option value="">Select your skin tone</option>
+                                {% for value, text in form.skin_tone.field.choices %}
+                                    <option value="{{ value }}" {% if form.skin_tone.value == value %}selected{% endif %}>{{ text }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="{{ form.height.id_for_label }}" class="form-label">Height (cm)</label>
+                            <input type="number" name="{{ form.height.name }}" id="{{ form.height.id_for_label }}" value="{{ form.height.value|default:'' }}" class="form-control" placeholder="Height in cm">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="{{ form.body_type.id_for_label }}" class="form-label">Body Type</label>
+                            <select name="{{ form.body_type.name }}" id="{{ form.body_type.id_for_label }}" class="form-select">
+                                <option value="">Select your body type</option>
+                                {% for value, text in form.body_type.field.choices %}
+                                    <option value="{{ value }}" {% if form.body_type.value == value %}selected{% endif %}>{{ text }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Save Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

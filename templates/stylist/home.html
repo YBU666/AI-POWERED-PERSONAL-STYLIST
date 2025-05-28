@@ -1,0 +1,111 @@
+{% extends 'stylist/base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section position-relative text-center py-5" style="background: linear-gradient(135deg, #6366f1 0%, #60a5fa 100%); border-radius: 2rem; box-shadow: 0 8px 32px rgba(99,102,241,0.13); color: #fff; overflow: hidden;">
+    <div class="container position-relative z-2">
+        <h1 class="display-4 fw-bold mb-3" style="font-family: 'Montserrat',sans-serif; letter-spacing: 1px;">AI-Powered Personal Stylist</h1>
+        <p class="lead mb-4">Get personalized outfit recommendations based on your preferences and body type</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
+            <a class="btn btn-lg btn-primary px-5 py-3 shadow" href="{% url 'request_outfit' %}">Get Outfit Suggestions</a>
+            <a class="btn btn-lg btn-outline-light px-5 py-3 shadow" href="{% url 'profile' %}">Update Profile</a>
+        </div>
+        <p class="mb-0">Create your profile, tell us about your style preferences, and let our AI suggest the perfect outfit for any occasion.</p>
+    </div>
+    <!-- SVG Wave -->
+    <div class="position-absolute bottom-0 start-0 w-100" style="line-height:0;">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#f8fafc" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,53.3C384,64,480,96,576,101.3C672,107,768,85,864,74.7C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="container position-relative z-2" style="margin-top: -60px;">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="feature-card card text-center p-4 h-100 border-0 shadow-lg animate__animated animate__fadeInUp d-flex flex-column" style="background:rgba(255,255,255,0.95);">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-user-circle fa-3x" style="color:#6366f1;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Create Your Profile</h5>
+                <p class="mb-3">Tell us about your body type, skin tone, and style preferences.</p>
+                <div class="mt-auto">
+                    <a href="{% url 'profile' %}" class="btn btn-outline-primary px-4 py-2 w-100">Update Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card card text-center p-4 h-100 border-0 shadow-lg animate__animated animate__fadeInUp animate__delay-1s d-flex flex-column" style="background:rgba(255,255,255,0.95);">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-tshirt fa-3x" style="color:#60a5fa;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Get Outfit Suggestions</h5>
+                <p class="mb-3">Receive personalized outfit recommendations for any occasion.</p>
+                <div class="mt-auto">
+                    <a href="{% url 'request_outfit' %}" class="btn btn-outline-primary px-4 py-2 w-100">Request Outfit</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card card text-center p-4 h-100 border-0 shadow-lg animate__animated animate__fadeInUp animate__delay-2s d-flex flex-column" style="background:rgba(255,255,255,0.95);">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-shopping-bag fa-3x" style="color:#fbbf24;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Shop Your Looks</h5>
+                <p class="mb-3">Find where to buy the recommended items online.</p>
+                <div class="mt-auto">
+                    <a href="{% url 'dashboard' %}" class="btn btn-outline-primary px-4 py-2 w-100">View Saved Outfits</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Animate.css CDN for entrance animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+.hero-section {
+    min-height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+.feature-card {
+    border-radius: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background: rgba(255,255,255,0.95);
+    display: flex;
+    flex-direction: column;
+}
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.13);
+    border: 1.5px solid #6366f1;
+}
+.feature-icon {
+    transition: transform 0.3s;
+}
+.feature-card:hover .feature-icon {
+    transform: scale(1.15) rotate(-6deg);
+}
+/* Button color fixes */
+.btn-primary, .btn-outline-primary, .btn-primary:visited, .btn-outline-primary:visited {
+    color: #fff !important;
+}
+.btn-primary:hover, .btn-outline-primary:hover, .btn-primary:focus, .btn-outline-primary:focus {
+    color: #fff !important;
+}
+.feature-card .btn {
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .hero-section {
+        min-height: 320px;
+        padding: 2rem 0 1rem 0;
+    }
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+}
+</style>
+{% endblock %}
