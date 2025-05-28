@@ -121,7 +121,7 @@ def test_kolors_virtual_tryon():
         print("Exception during test:", str(e))
 
 def test_rapidapi_viton_tryon():
-    rapidapi_key = "aee7765f26msh82287fbd3051e54p1835e6jsn3114304c19fd"  # Replace with your actual RapidAPI key
+    rapidapi_key = ""  # Replace with your actual RapidAPI key
     url = "https://try-on-diffusion.p.rapidapi.com/try-on-file"
     m = MultipartEncoder(
         fields={
